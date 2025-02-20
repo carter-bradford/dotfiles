@@ -52,7 +52,7 @@
 @define-color	crust-rgb  rgb(17, 17, 27);
 
 * {
-  font-family: 'CaskaydiaCove Nerd Font', monospace;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 18px;
 }
 
@@ -79,6 +79,10 @@ window {
   padding: 10px;
   border: none;
   background-color: @base;
+  background-image: url("file:///home/parallels/.config/backgrounds/gray0_ctp_on_line.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 53px;
 }
 
 /* Scroll */
