@@ -1,4 +1,8 @@
+name: Catppuccin Mocha with Background
 background: '#1e1e2e'
+background_image:
+  path: ~/.config/backgrounds/tokyo-night.jpg
+  opacity: 30
 accent: '#f5e0dc'
 foreground: '#cdd6f4'
 details: darker
