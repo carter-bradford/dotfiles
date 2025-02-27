@@ -2,7 +2,11 @@ return {
   {
     "mfussenegger/nvim-dap",
     event = "VeryLazy",
-    config = function()
+    dependencies = {
+      "LazyVim/LazyVim",
+    },
+    opts = function()
+      -- Load your custom DAP configurations
       require("config.dap-config")
     end,
   },
