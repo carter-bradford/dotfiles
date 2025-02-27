@@ -4,9 +4,40 @@ return {
 	color_scheme = "Catppuccin Mocha",
 	enable_tab_bar = false,
 	font_size = 12.0,
-	font = wezterm.font("CaskaydiaCove Nerd Font Mono"),
+	font = wezterm.font("JetBrainsMono Nerd Font"),
 
-	window_background_opacity = 0.93,
+	colors = {
+		background = "#1e1e2e",
+	},
+
+	background = {
+		{
+			source = {
+				File = "/Users/cbradford/.config/backgrounds/tokyo-night.jpg",
+			},
+			opacity = 1.0,
+			width = "100%",
+			height = "100%",
+			repeat_x = "NoRepeat",
+			repeat_y = "NoRepeat",
+			hsb = {
+				brightness = 1.0,
+				hue = 1.0,
+				saturation = 1.0,
+			},
+		},
+		{
+			source = {
+				Color = "#1e1e2e",
+			},
+			width = "100%",
+			height = "100%",
+			opacity = 0.75,
+		},
+	},
+
+	window_background_opacity = 1.0,
+	--macos_window_background_blur = 20,
 	--	window_decorations = "RESIZE",
 	keys = {
 		{
