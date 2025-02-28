@@ -1,0 +1,47 @@
+{
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "powermode.enabled": true,
+    "powermode.combo.timerEnabled": "hide",
+    "powermode.combo.counterEnabled": "hide",
+    "powermode.combo.location": "statusbar",
+    "powermode.shake.enabled": false,
+    "powermode.combo.threshold": 50,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "yaml.schemas": {
+        "file:///Users/cbradford/.cursor/extensions/atlassian.atlascode-3.4.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.bitbucket.enabled": false,
+    "atlascode.jira.jqlList": [
+        {
+            "id": "33ec599c-58c6-45da-9c08-ee0626f569c4",
+            "enabled": true,
+            "name": "My jasperridge Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "83e543b3-ccb7-46d9-8395-c9f7673e0b1b",
+            "monitor": true
+        }
+    ],
+    "FSharp.suggestGitignore": false,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.lineNumbers": "relative",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.minimap.enabled": true,
+    "background.editorBackgrounds": [
+        "/Users/cbradford/dotfiles/backgrounds/.config/backgrounds/tokyo-night.jpg"
+    ],
+    "background.backgroundOpacity": [
+        0.1,
+        0.2,
+        0.1,
+        0.1
+    ],
+    "sync.gist": "c0d35ce49eb1795479f3867505abf489",
+    "sync.autoUpload": true,
+    "sync.autoDownload": true
+}
