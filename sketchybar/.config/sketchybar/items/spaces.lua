@@ -16,16 +16,16 @@ local currentWorkspaceWatcher = sbar.add("item", {
 })
 
 local spaceConfigs <const> = {
-	["1"] = { icon = ":microsoft_edge:", name = "1" },
-	["2"] = { icon = ":todoist:", name = "2" },
-	["3"] = { icon = ":notes:", name = "3" },
-	["4"] = { icon = ":microsoft_teams:", name = "4" },
-	["5"] = { icon = ":terminal:", name = "5" },
-	["6"] = { icon = ":code:", name = "6" },
-	["7"] = { icon = ":microsoft_edge:", name = "7" },
-	["8"] = { icon = ":mail:", name = "8" },
-	["9"] = { icon = ":messages:", name = "9" },
-	["0"] = { icon = ":slack:", name = "0" },
+	["1"] = { icon = " :microsoft_edge:", name = " 1" },
+	["2"] = { icon = " :todoist:", name = " 2" },
+	["3"] = { icon = " :notes:", name = " 3" },
+	["4"] = { icon = " :microsoft_teams:", name = " 4" },
+	["5"] = { icon = " :terminal:", name = " 5" },
+	["6"] = { icon = " :code:", name = " 6" },
+	["7"] = { icon = " :microsoft_edge:", name = " 7" },
+	["8"] = { icon = " :mail:", name = " 8" },
+	["9"] = { icon = " :messages:", name = " 9" },
+	["0"] = { icon = " :slack:", name = " 0" },
 }
 
 local function selectCurrentWorkspace(focusedWorkspaceName)
