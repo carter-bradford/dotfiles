@@ -4,7 +4,7 @@ return {
     "folke/snacks.nvim",
   },
   opts = {
-    ssh_aliases = { github_jasper = "github.com" },
+    ssh_aliases = { github_work = "github.com" },
     picker = "snacks",
   },
 }
