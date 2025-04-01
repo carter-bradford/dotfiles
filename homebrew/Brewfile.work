@@ -117,6 +117,8 @@ cask "warp"
 cask "wezterm"
 cask "windows-app"
 cask "zen-browser"
+mas "Dato", id: 1470584107
+mas "Dropover", id: 1355679052
 vscode "42crunch.vscode-openapi"
 vscode "aaron-bond.better-comments"
 vscode "adpyke.vscode-sql-formatter"
