@@ -191,3 +191,6 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 # TODO:  Add on-window-detected events to move things to the right workspace
+#[[on-window-detected]]
+# if.app-id = 'com.jetbrains.toolbox'
+# run = 'layout floating'
