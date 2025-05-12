@@ -1,5 +1,6 @@
 tap "aviator-co/tap"
 tap "buo/cask-upgrade"
+tap "dagger/tap"
 tap "felixkratz/formulae"
 tap "hashicorp/tap"
 tap "infisical/get-cli"
@@ -70,6 +71,7 @@ brew "yazi"
 brew "yq"
 brew "zoxide"
 brew "aviator-co/tap/av"
+brew "dagger/tap/dagger"
 brew "felixkratz/formulae/borders"
 brew "felixkratz/formulae/sketchybar"
 brew "infisical/get-cli/infisical"
@@ -124,6 +126,7 @@ cask "warp"
 cask "wezterm"
 cask "windows-app"
 cask "zen-browser"
+mas "Bear", id: 1016366447
 mas "Dato", id: 1470584107
 mas "Dropover", id: 1355679052
 vscode "42crunch.vscode-openapi"
