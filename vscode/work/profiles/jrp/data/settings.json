@@ -10,7 +10,7 @@
     "editor.cursorBlinking": "expand",
     "editor.cursorSmoothCaretAnimation": "on",
     "yaml.schemas": {
-        "file:///Users/cbradford/.cursor/extensions/atlassian.atlascode-3.4.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///Users/cbradford/.vscode/extensions/atlassian.atlascode-3.8.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "atlascode.bitbucket.enabled": false,
     "atlascode.jira.jqlList": [
@@ -43,5 +43,35 @@
     ],
     "sync.gist": "c0d35ce49eb1795479f3867505abf489",
     "sync.autoUpload": true,
-    "sync.autoDownload": true
+    "sync.autoDownload": true,
+    "editor.accessibilitySupport": "off",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font','Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "snowflake.connectionsConfigFile": "/Users/cbradford/.snowflake/connections.toml",
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "altimate.onboardedMcpServer": true,
+    "roo-cline.allowedCommands": [
+        "npm test",
+        "npm install",
+        "tsc",
+        "git log",
+        "git diff",
+        "git show"
+    ],
+    "atlascode.jira.lastCreateSiteAndProject": {
+        "siteId": "",
+        "projectKey": ""
+    },
+    "hediet.vscode-drawio.resizeImages": null,
+    "workbench.editorAssociations": {
+        "{git,gitlens,conflictResolution,vscode-local-history}:/**/*.tc.json": "default",
+        "{git,gitlens,conflictResolution,vscode-local-history}:/**/*.{asl.json,asl.yaml,asl.yml}": "default",
+        "*.svg": "hediet.vscode-drawio-text"
+    }
 }
