@@ -70,6 +70,7 @@ brew "pre-commit"
 brew "rcmdnk/file/brew-file"
 brew "repomix"
 brew "ripgrep"
+brew "rlwrap"
 brew "sf"
 brew "snowflake-cli"
 brew "spicetify-cli"
@@ -159,6 +160,7 @@ cask "zen-browser"
 mas "Bear", id: 1091189122
 mas "Dato", id: 1470584107
 mas "Dropover", id: 1355679052
+mas "Perplexity", id: 6714467650
 mas "Spokenly", id: 6740315592
 vscode "42crunch.vscode-openapi"
 vscode "aaron-bond.better-comments"
