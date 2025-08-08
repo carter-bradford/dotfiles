@@ -8,5 +8,6 @@ return {
     opts.picker.sources.explorer = opts.picker.sources.explorer or {}
     opts.picker.sources.explorer.hidden = true
     opts.image = opts.image or {}
+    opts.dashboard = { enabled = false }
   end,
 }
