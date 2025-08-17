@@ -159,6 +159,7 @@ cask "windows-app"
 cask "windsurf"
 cask "wooshy"
 cask "zen-browser"
+mas "Amphetamine", id:  937984704
 mas "Bear", id: 1091189122
 mas "Dato", id: 1470584107
 mas "Dropover", id: 1355679052
