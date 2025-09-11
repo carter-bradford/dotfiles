@@ -7,6 +7,6 @@ require("items.front_app")
 
 -- Right Items
 require("items.message")
--- require("items.calendar")
 require("items.widgets")
 require("items.media")
+require("items.calendar")
