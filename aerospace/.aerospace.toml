@@ -13,7 +13,7 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-  'exec-and-forget borders active_color=0xfff5c2e7 inactive_color=0xff494d64 width=8.0 blacklist="krisp,SoundSource,Dropover,alacritty"',
+  'exec-and-forget borders active_color="gradient(top_right=0xFFF2CDCD,bottom_left=0xFFCBA6F7)" inactive_color=0xff494d64 width=8.0 blacklist="krisp,SoundSource,Dropover,alacritty"',
   'exec-and-forget sketchybar',
 ]
 
@@ -168,7 +168,7 @@ esc = [
   'reload-config',
   'mode main',
   'exec-and-forget sketchybar --reload',
-  'exec-and-forget borders active_color=0xfff5c2e7 inactive_color=0xff494d64 width=8.0 blacklist="krisp,SoundSource,Dropover,alacritty"',
+  'exec-and-forget borders active_color="gradient(top_right=0xFFF2CDCD,bottom_left=0xFFCBA6F7)" inactive_color=0xff494d64 width=8.0 blacklist="krisp,SoundSource,Dropover,alacritty"',
   'exec-and-forget sleep 0.5 && sketchybar --trigger send_message MESSAGE="Aerospace Reloaded"',
 ]
 
