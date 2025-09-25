@@ -19,6 +19,7 @@ brew "awscli"
 brew "azure-cli"
 brew "bat"
 brew "blueutil"
+brew "brew-gem"
 brew "btop"
 brew "checkov"
 brew "cmake"
@@ -163,7 +164,7 @@ cask "wezterm"
 cask "windows-app"
 cask "windsurf"
 cask "wooshy"
-cask "zen-browser"
+cask "zen"
 mas "Amphetamine", id:  937984704
 mas "Bear", id: 1091189122
 mas "Dato", id: 1470584107
@@ -264,3 +265,19 @@ vscode "kahole.magit"
 vscode "leanprover.lean4"
 vscode "myriad-dreamin.tinymist"
 vscode "traycer.traycer-vscode"
+# Brewfile runs with a minimal PATH; HOMEBREW_PREFIX/bin is not guaranteed to be in it.
+brew_prefix = ENV["HOMEBREW_PREFIX"] || "/opt/homebrew" # Intel users may be "/usr/local"
+brew_bin    = File.join(brew_prefix, "bin", "brew")
+
+# --- install CLI gems via brew-gem, idempotently, with logs ---
+%w[doing].each do |g|
+  formula = "gem-#{g}"
+  puts "[brewfile] checking #{formula}…"
+  if system(brew_bin, "list", "--formula", formula)
+    puts "[brewfile] #{formula} already installed"
+  else
+    puts "[brewfile] installing #{g} via brew-gem…"
+    ok = system(brew_bin, "gem", "install", g)
+    raise "[brewfile] failed to install #{g}" unless ok
+  end
+end
