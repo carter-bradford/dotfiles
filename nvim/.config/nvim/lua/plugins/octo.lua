@@ -4,7 +4,10 @@ return {
     "folke/snacks.nvim",
   },
   opts = {
-    ssh_aliases = { github_work = "github.com" },
+    ssh_aliases = {
+      ["github_work"] = "github.com",
+      ["github-work"] = "github.com",
+    },
     picker = "snacks",
   },
 }
