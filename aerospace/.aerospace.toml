@@ -14,18 +14,18 @@ after-login-command = []
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
   'exec-and-forget borders active_color="gradient(top_right=0xFFF2CDCD,bottom_left=0xFFCBA6F7)" inactive_color=0xff494d64 width=8.0 blacklist="krisp,SoundSource,Dropover,alacritty"',
-  'exec-and-forget sketchybar',
+  #  'exec-and-forget sketchybar',
 ]
 
 # Notify Sketchybar about workspace change
-exec-on-workspace-change = [
-  '/bin/bash',
-  '-c',
-  'sketchybar --trigger aerospace_workspace_changed FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
-]
-
-on-focus-changed = ['exec-and-forget sketchybar --trigger front_app_switched']
-
+# exec-on-workspace-change = [
+#   '/bin/bash',
+#   '-c',
+#   'sketchybar --trigger aerospace_workspace_changed FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
+# ]
+#
+# on-focus-changed = ['exec-and-forget sketchybar --trigger front_app_switched']
+#
 # Start AeroSpace at login
 start-at-login = true
 
@@ -67,7 +67,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 inner.horizontal = 10
 inner.vertical = 10
 outer.left = 5
-outer.bottom = 45
+outer.bottom = 5
 outer.top = 8
 outer.right = 5
 
@@ -156,10 +156,10 @@ alt-r = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = [
   'mode service',
-  'exec-and-forget sketchybar --trigger send_message MESSAGE="Aerospace in Service Mode" HOLD="true"',
+  # 'exec-and-forget sketchybar --trigger send_message MESSAGE="Aerospace in Service Mode" HOLD="true"',
 ]
 
-alt-m = 'exec-and-forget sketchybar --trigger aerospace_switch'
+# alt-m = 'exec-and-forget sketchybar --trigger aerospace_switch'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -167,21 +167,21 @@ alt-m = 'exec-and-forget sketchybar --trigger aerospace_switch'
 esc = [
   'reload-config',
   'mode main',
-  'exec-and-forget sketchybar --reload',
+  # 'exec-and-forget sketchybar --reload',
   'exec-and-forget borders active_color="gradient(top_right=0xFFF2CDCD,bottom_left=0xFFCBA6F7)" inactive_color=0xff494d64 width=8.0 blacklist="krisp,SoundSource,Dropover,alacritty"',
-  'exec-and-forget sleep 0.5 && sketchybar --trigger send_message MESSAGE="Aerospace Reloaded"',
+  # 'exec-and-forget sleep 0.5 && sketchybar --trigger send_message MESSAGE="Aerospace Reloaded"',
 ]
 
 r = [
   'flatten-workspace-tree',
   'mode main',
-  'exec-and-forget sleep 0.5 && sketchybar --trigger hide_message',
+  # 'exec-and-forget sleep 0.5 && sketchybar --trigger hide_message',
 ] # reset layout
 #s = ['layout sticky tiling', 'mode main'] # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
 f = [
   'layout floating tiling',
   'mode main',
-  'exec-and-forget sleep 0.5 && sketchybar --trigger hide_message',
+  # 'exec-and-forget sleep 0.5 && sketchybar --trigger hide_message',
 ] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 
