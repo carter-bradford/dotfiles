@@ -26,3 +26,4 @@ alias vim='nvim'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init zsh)"
 eval "$(mise activate zsh)"
+gwsp() { GOOGLE_WORKSPACE_CLI_CONFIG_DIR="$HOME/.config/gwsp" gws "$@"; }
